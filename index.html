@@ -1,0 +1,326 @@
+<!-- Portafolio Profesional de Roxana Chinchilla Vásquez -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio Profesional | Roxana Chinchilla Vásquez</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/JulietaUla/Montserrat/fontface/Montserrat.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Roxana Chinchilla Vásquez</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Sobre mí</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Proyectos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificaciones">Certificados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5 mb-0">
+    <div id="hero">
+      <div id="particles-js"></div>
+      <div id="hero-content">
+        <h1>Roxana Chinchilla Vásquez</h1>
+        <p>Analista de Datos | Power BI | Python | SQL | R</p>
+        <a href="#contact" class="btn">Contáctame</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="about" class="custom-container">
+    <h2 class="text-center mb-4">Sobre mí</h2>
+    <div class="about-content">
+      <div class="about-image">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <!-- Lado frontal: la foto -->
+            <div class="flip-card-front">
+              <img src="images/Foto1.jpg" alt="Foto de Roxana">
+            </div>
+
+            <!-- Lado trasero: gráfico de barras -->
+            <div class="flip-card-back">
+              <img src="images/icono-evolucion.png" alt="Icono evolución" class="icono-evolucion">
+              <h4 style="margin-bottom: 1rem;">Mi Evolución Profesional</h4>
+              <div class="bar-container">
+                <div class="bar-row">
+                  <span class="bar-label">Derecho</span>
+                  <div class="bar">
+                    <div class="fill derecho"></div>
+                  </div>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Ingeniería Informática</span>
+                  <div class="bar">
+                    <div class="fill ingenieria"></div>
+                  </div>
+                </div>
+                <div class="bar-row">
+                  <span class="bar-label">Análisis de Datos</span>
+                  <div class="bar">
+                    <div class="fill analisis"></div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-description">
+        <p>
+          Hola, soy Roxana, una apasionada profesional que ha recorrido un camino lleno de transformación y evolución.
+          Mi carrera inició en el <strong>Derecho</strong>, donde desarrollé habilidades analíticas y pensamiento
+          estructurado. Posteriormente, mi pasión por la tecnología me llevó a estudiar <strong>Ingeniería
+            Informática</strong>, donde encontré mi verdadero interés por el análisis de datos. Actualmente, me
+          desempeño como <strong>Analista de Datos</strong>, aplicando conocimientos en Power BI, Python, R y SQL para
+          tomar decisiones estratégicas y optimizar procesos.
+        </p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Proyectos -->
+  <section id="projects">
+    <h2 class="section-title">Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="images/dash1.png" alt="Proyecto 1">
+        <div class="project-info">
+          <h3>Proyecto 1</h3>
+          <p>Análisis avanzado de datos financieros con Power BI.</p>
+          <div class="project-tech">
+            <span>Power BI</span>
+            <span>SQL</span>
+          </div>
+          <a href="proyecto1.html" class="btn btn-project">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/dash1.png" alt="Proyecto 2">
+        <div class="project-info">
+          <h3>Proyecto 2</h3>
+          <p>Modelo predictivo de Machine Learning con Python.</p>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>Machine Learning</span>
+          </div>
+          <a href="proyecto2.html" class="btn btn-project">Ver Detalles</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/dash.2.png" alt="Proyecto 3">
+        <div class="project-info">
+          <h3>Proyecto 3</h3>
+          <p>Dashboard interactivo para visualización de datos.</p>
+          <div class="project-tech">
+            <span>Power BI</span>
+            <span>R</span>
+          </div>
+          <a href="proyecto3.html" class="btn btn-project">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Separador ondulado entre Proyectos y Certificaciones -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path fill="#032F40" d="M0,0 C480,150 960,0 1440,150 L1440,0 L0,0 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Seccion de Certificaciones -->
+  <section id="certificaciones" style="background-color: #032F40; padding: 4rem 1rem; color: white;">
+    <div class="container" style="max-width: 1200px; margin: 0 auto;">
+      <h2
+        style="text-align: center; font-size: 2.5rem; margin-bottom: 3rem; border-bottom: 3px solid #F2B807; display: inline-block;">
+        Certificaciones · Mi Ruta de Aprendizaje</h2>
+
+      <!-- Tabs -->
+      <div style="text-align: center; margin-bottom: 2rem;">
+        <button class="tablink" onclick="openTab(event, 'basico')"
+          style="background-color: #04738C; color: white; padding: 0.5rem 1.5rem; margin: 0 0.5rem; border: none; border-radius: 20px; cursor: pointer;">Básico</button>
+        <button class="tablink" onclick="openTab(event, 'intermedio')"
+          style="background-color: #F2B807; color: #032F40; padding: 0.5rem 1.5rem; margin: 0 0.5rem; border: none; border-radius: 20px; cursor: pointer;">Intermedio</button>
+        <button class="tablink" onclick="openTab(event, 'avanzado')"
+          style="background-color: #8C4608; color: white; padding: 0.5rem 1.5rem; margin: 0 0.5rem; border: none; border-radius: 20px; cursor: pointer;">Avanzado</button>
+      </div>
+
+      <!-- Nivel Básico -->
+      <div id="basico" class="tabcontent" style="display: block;">
+        <div class="cert-grid">
+          <div class="cert-card"
+            onclick="openModal('images/certificados/1.jpg', 'Analítica de datos para toma de decisiones')">
+            <img src="images/certificados/1.jpg" alt="Certificado 1">
+            <p>Analítica de datos para toma de decisiones</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/2.jpg', 'Análisis y Visualización de Datos con Excel')">
+            <img src="images/certificados/2.jpg" alt="Certificado 2">
+            <p>Análisis y Visualización de Datos con Excel</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/3.jpg', 'Análisis y Visualización de Datos con Power BI')">
+            <img src="images/certificados/3.jpg" alt="Certificado 3">
+            <p>Análisis y Visualización de Datos con Power BI</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/5.jpg', 'Introducción a R para Ciencia de Datos')">
+            <img src="images/certificados/5.jpg" alt="Certificado 5">
+            <p>Introducción a R para Ciencia de Datos</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/8.jpg', 'Introducción a Python para Ciencia de Datos')">
+            <img src="images/certificados/8.jpg" alt="Certificado 8">
+            <p>Introducción a Python para Ciencia de Datos</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nivel Intermedio -->
+      <div id="intermedio" class="tabcontent" style="display: none;">
+        <div class="cert-grid">
+          <div class="cert-card" onclick="openModal('images/certificados/6.jpg', 'SQL para análisis de datos')">
+            <img src="images/certificados/6.jpg" alt="Certificado 6">
+            <p>SQL para análisis de datos</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/4.jpg', 'Inteligencia de Negocios aplicada con Power BI')">
+            <img src="images/certificados/4.jpg" alt="Certificado 4">
+            <p>Inteligencia de Negocios aplicada con Power BI</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/7.jpg', 'Estadística Esencial para Análisis de Datos')">
+            <img src="images/certificados/7.jpg" alt="Certificado 7">
+            <p>Estadística Esencial para Análisis de Datos</p>
+          </div>
+          <div class="cert-card" onclick="openModal('images/certificados/9.jpg', 'Data Storytelling de Impacto')">
+            <img src="images/certificados/9.jpg" alt="Certificado 9">
+            <p>Data Storytelling de Impacto</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nivel Avanzado -->
+      <div id="avanzado" class="tabcontent" style="display: none;">
+        <div class="cert-grid">
+          <div class="cert-card"
+            onclick="openModal('images/certificados/11.jpg', 'Analítica Avanzada con Power BI, R y Python')">
+            <img src="images/certificados/11.jpg" alt="Certificado 11">
+            <p>Analítica Avanzada con Power BI, R y Python</p>
+          </div>
+          <div class="cert-card" onclick="openModal('images/certificados/10.jpg', 'Análisis de Big Data con Python')">
+            <img src="images/certificados/10.jpg" alt="Certificado 10">
+            <p>Análisis de Big Data con Python</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/12.jpg', 'Machine Learning: Modelos de Clasificación')">
+            <img src="images/certificados/12.jpg" alt="Certificado 12">
+            <p>Machine Learning: Modelos de Clasificación</p>
+          </div>
+          <div class="cert-card"
+            onclick="openModal('images/certificados/13.jpg', 'Machine Learning: Modelos de Regresión')">
+            <img src="images/certificados/13.jpg" alt="Certificado 13">
+            <p>Machine Learning: Modelos de Regresión</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="modal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;">
+    <div
+      style="background:#fff; padding:2rem; border-radius:10px; max-width:90%; max-height:90%; overflow:auto; position:relative;">
+      <span onclick="closeModal()"
+        style="position:absolute; top:10px; right:20px; font-size:1.5rem; cursor:pointer; color:black;">&times;</span>
+      <h3 id="modalTitle" style="color:#032F40;"></h3>
+      <img id="modalImage" src="" alt="Certificado" style="width:100%; margin-top:1rem; border-radius:8px;">
+    </div>
+  </div>
+
+  <!-- Contacto -->
+  <section id="contact-section">
+    <p class="contact-message">
+      ¿Está buscando una analista de datos comprometida, analítica y orientada a resultados? Estoy disponible para
+      nuevos desafíos. Escribe un mensaje y te contactaré en breve.
+    </p>
+    <div id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contacto</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Nombre Completo" required />
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Correo Electrónico" required />
+        </div>
+        <div class="col-12">
+          <textarea class="form-control" placeholder="Mensaje" rows="4" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <div class="social-icons">
+      <a href="https://github.com/roxana0507" target="_blank"><img src="./images/github.png" alt="GitHub" /></a>
+      <a href="https://linkedin.com/in/roxana-chinchilla-vásquez-58879820b" target="_blank"><img
+          src="./images/linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://wa.me/50686027182" target="_blank" title="Enviar mensaje por WhatsApp">
+        <img src="./images/whatsapp.png" alt="WhatsApp" />
+      </a>
+
+    </div>
+    <p>
+      &copy; 2025 Roxana Chinchilla Vásquez. Todos los derechos reservados.
+    </p>
+  </footer>
+
+</body>
+<script src="js/particles.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
