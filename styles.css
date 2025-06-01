@@ -207,6 +207,31 @@ header::after {
   50% { transform: translateY(-4px); }
 }
 
+.highlight-role {
+  color: #f2b807;
+  font-weight: 600;
+  font-size: clamp(2.3rem, 2vw, 1.6rem);  /* Tamaño responsivo: entre 1.2rem y 1.6rem */
+  padding: 4px 10px;
+  border: 0.1px solid #f2b807;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 12px rgba(242, 184, 7, 0.2);
+  animation: fadeInTop 1.2s ease-out forwards;
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 /* Secciones flotantes */
 #about,
