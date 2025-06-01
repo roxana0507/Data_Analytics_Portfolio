@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto 2</title>
+  <link rel="stylesheet" href="proyectos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Hero con fondo animado -->
+    <header class="project-hero">
+      <div id="particles-js"></div>
+      <div class="hero-title-wrapper">
+        <a href="index.html" class="btn-back-hero">← Volver al Portafolio Principal</a>
+        <h1 class="hero-title-animated">
+          Simulación Comercial Dinámica con Parámetros en Power BI
+        </h1>
+        <p class="project-role">Desarrollado por: Roxana Chinchilla Vásquez · Analista de Datos</p>
+      </div>
+    </header>
+
+    <!-- Objetivo y Pregunta -->
+    <div class="card">
+      <h2>🎯 Objetivo</h2>
+      <p>Diseñar un dashboard en Power BI que permita simular escenarios comerciales mediante parámetros dinámicos,
+         evaluando el impacto de ingresos, descuentos y costos en la utilidad, así como identificar clientes destacados
+         por volumen o crecimiento.</p>
+    </div>
+
+    <div class="card">
+      <h2>❓Pregunta Principal</h2>
+      <p>¿Cómo varía la utilidad al ajustar ingresos, descuentos y costos mediante parámetros, y qué clientes se destacan por su aporte o crecimiento?</p>
+    </div>
+
+    <!-- Visual del Dashboard -->
+    <div class="card img-card">
+      <img src="images/dash.2.png" alt="Dashboard Principal Proyecto 2" />
+      <a href="https://app.powerbi.com/links/2otQv74Uwc?ctid=d08db6ec-36c8-4b54-b9b2-2d03dcc84544&pbi_source=linkShare&bookmarkGuid=5eb6a458-f45c-4e9e-bfc0-e3a14c2bfa12"
+        class="btn" target="_blank">Ver Dashboard Interactivo</a>
+    </div>
+
+    <!-- Vista Previa del Dashboard -->
+    <section class="dashboard-preview">
+      <h2 class="preview-title">Vista previa del dashboard</h2>
+      <div class="dashboard-images">
+        <img src="images/Proyecto2/001.jpg" alt="Escenarios con Parámetros" onclick="openImage(this.src)">
+        <img src="images/Proyecto2/002.jpg" alt="Matriz de Impacto" onclick="openImage(this.src)">
+        <img src="images/Proyecto2/003.jpg" alt="Clientes Destacados" onclick="openImage(this.src)">
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+      <span class="close-btn">✖</span>
+      <img id="lightbox-img" src="" alt="Captura Ampliada">
+    </div>
+
+    <!-- Hallazgos -->
+    <div class="card">
+      <h2>🔍 Hallazgos Relevantes</h2>
+      <ul>
+        <li>Los parámetros permiten analizar la variación de utilidad ante cambios de ingresos, descuentos y costos.</li>
+        <li>El escenario simulado estimó una mejora del 1.39 % en la utilidad frente a la situación real.</li>
+        <li>El análisis matricial reveló combinaciones óptimas entre ingresos y descuentos que maximizan la utilidad.</li>
+        <li>Solo el 28 % de los clientes generan más del 70 % de las ventas totales en el año.</li>
+      </ul>
+    </div>
+
+    <!-- Oportunidades -->
+    <div class="card">
+      <h2>💡 Oportunidades de Mejora</h2>
+      <ul>
+        <li>Utilizar simulaciones paramétricas para ajustar precios y promociones en campañas comerciales.</li>
+        <li>Aplicar análisis por cliente destacado para segmentar esfuerzos de retención y fidelización.</li>
+        <li>Revisar estrategias en países con bajo crecimiento y ventas marginales.</li>
+        <li>Priorizar combinaciones de escenarios que logren máxima utilidad estimada por región o canal.</li>
+      </ul>
+    </div>
+
+    <!-- Herramientas -->
+    <div class="card">
+      <h2>🛠️ Herramientas y Técnicas</h2>
+      <p><strong>Transformación de datos:</strong> Power Query.</p>
+      <p><strong>Modelado y lógica:</strong> DAX (Parámetros de Escenario, SWITCH, SUMX, IF, RANKX, Variables).</p>
+      <p><strong>Visualización:</strong> Segmentaciones dinámicas, matriz de simulación, scatter plots, visuales comparativos.</p>
+    </div>
+
+    <!-- Cierre -->
+    <section class="project-closing">
+      <h2>Este es solo uno de mis proyectos</h2>
+      <p>Mi portafolio incluye soluciones en Power BI, Python, SQL y más. Si querés ver cómo aplico distintas técnicas
+         de análisis de datos en diferentes contextos, te invito a descubrir los demás proyectos.</p>
+      <a href="index.html#projects" class="btn btn-cta">Ver más proyectos</a>
+    </section>
+  </div>
+
+  <script src="js/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
+
