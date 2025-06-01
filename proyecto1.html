@@ -2,81 +2,115 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Proyecto 1 - Segmentaciones Dinámicas</title>
-  <link rel="stylesheet" href="proyectos.css">
+  <link rel="stylesheet" href="proyectos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="scripts.js" defer></script>
+
 </head>
 
 <body>
 
-  <header class="project-header">
-    <h1 class="project-title">Segmentaciones Dinámicas en Power BI para Decisiones Estratégicas</h1>
-    <span class="project-role">Desarrollado por: Roxana Chinchilla Vásquez · Analista de Datos</span>
-  </header>
+  <div class="main-container">
+    <!-- Título y encabezado -->
+    <!-- Hero animado como en la página principal -->
+    <header class="project-hero">
+      <div id="particles-js"></div>
+      <div class="hero-title-wrapper">
+        <a href="index.html" class="btn-back-hero">← Volver al Portafolio Principal</a>
+        <h1 class="hero-title-animated">
+          Segmentaciones Dinámicas en Power BI para Decisiones Estratégicas
+        </h1>
+        <p class="project-role">Desarrollado por: Roxana Chinchilla Vásquez · Analista de Datos</p>
+      </div>
+    </header>
 
-  <section class="project-detail custom-container">
-    <!-- Resumen ejecutivo -->
-    <div class="project-summary">
-      <p>
-        Este dashboard permite identificar rápidamente las subcategorías con mayor impacto en las métricas de
-        ventas, egresos y margen. Utiliza segmentaciones dinámicas por filtros clave como canal, estado, año y TOP.
-        Fue diseñado para la toma de decisiones ejecutivas y cuenta con visualizaciones claras, segmentadas por
-        indicador y por valores destacados.
+
+
+    <!-- Objetivo y Pregunta -->
+    <div class="card">
+      <h2>🎯 Objetivo</h2>
+      <p>Diseñar un dashboard interactivo en Power BI que permita a los tomadores de decisiones identificar
+        subcategorías de productos clave y analizar su comportamiento por indicadores como ingresos, egresos y margen.
       </p>
     </div>
 
-    <!-- Imagen destacada del dashboard -->
-    <div class="project-snapshot">
-      <img src="images/dash1.png" alt="Captura del dashboard" class="project-img">
+    <div class="card">
+      <h2>❓Pregunta Principal</h2>
+      <p>¿Cuáles subcategorías y métricas presentan mayor impacto en el rendimiento de ventas y cómo se comportan por
+        canal, región y periodo?</p>
+    </div>
+
+    <!-- Visual del Dashboard -->
+    <div class="card img-card">
+      <img src="images/dash1.png" alt="Dashboard Principal" />
       <a href="https://app.powerbi.com/links/7mSVQAfb1J?ctid=d08db6ec-36c8-4b54-b9b2-2d03dcc84544&pbi_source=linkShare&bookmarkGuid=15b07156-ba0d-436d-b4fa-a51ab0694196"
-        class="btn btn-project" target="_blank">
-        Ver Interactivo en Power BI
-      </a>
+        class="btn" target="_blank">Ver Dashboard Interactivo</a>
     </div>
 
-    <!-- Capturas del dashboard -->
-    <div class="project-gallery">
-      <h3>Visualizaciones Destacadas</h3>
-      <div class="gallery-wrapper">
-        <img src="images/Proyecto1/page-0002.jpg" alt="Captura Ingresos">
-        <img src="images/Proyecto1/page-0003.jpg" alt="Captura Segmentación TOP">
-        <img src="images/Proyecto1/page-0004.jpg" alt="Captura Conclusiones">
+    <!-- Vista Previa del Dashboard con Zoom -->
+    <section class="dashboard-preview">
+      <h2 class="preview-title">Vista previa del dashboard</h2>
+      <div class="dashboard-images">
+        <img src="images/Proyecto1/page-0002.jpg" alt="Captura Segmentación TOP" onclick="openImage(this.src)">
+        <img src="images/Proyecto1/page-0003.jpg" alt="Captura Análisis por Indicador" onclick="openImage(this.src)">
       </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+      <span class="close-btn">✖</span>
+      <img id="lightbox-img" src="" alt="Captura Ampliada">
     </div>
 
-    <!-- Conclusiones del análisis -->
-    <div class="project-conclusions">
-      <h3>Conclusiones Estratégicas</h3>
+
+
+    <!-- Hallazgos Relevantes -->
+    <div class="card">
+      <h2>🔍 Hallazgos Relevantes</h2>
       <ul>
-        <li>🎯 El 80 % de las ventas proviene del Top 10 de subcategorías, mostrando alta concentración.</li>
-        <li>📉 Se identificaron regiones con márgenes bajos (Maine, South Carolina), ideales para ajustes.</li>
-        <li>💡 Existen oportunidades en subcategorías emergentes que pueden ser impulsadas estratégicamente.</li>
-        <li>📊 Las segmentaciones por moneda revelaron ineficiencias en la conversión dólar-colón.</li>
-        <li>🌐 El canal online está infrautilizado, lo que representa un espacio para crecimiento digital.</li>
-        <li>🧠 Se sugiere implementar benchmarking regional para replicar prácticas exitosas.</li>
+        <li>El 80 % de las ventas proviene del Top 10 de subcategorías: Camcorders, Laptops, Projectors & Screens.</li>
+        <li>Las regiones de Maine y South Carolina muestran bajos márgenes sostenidos.</li>
+        <li>El canal online tiene una participación significativamente menor, con potencial de mejora.</li>
+        <li>El 75–100 % del ingreso depende de las primeras 10 subcategorías en múltiples años.</li>
       </ul>
     </div>
 
-    <!-- Tecnologías y aportes -->
-    <div class="project-tools">
-      <h3>Tecnologías Utilizadas</h3>
-      <p><strong>Herramientas:</strong> Power BI · DAX · Excel · Segmentaciones dinámicas · Bookmarking</p>
-      <p><strong>Mi aporte:</strong> Desarrollo completo del dashboard, limpieza de datos, diseño de KPIs e
-        interpretación de hallazgos.</p>
+    <!-- Oportunidades de Mejora -->
+    <div class="card">
+      <h2>💡 Oportunidades de Mejora</h2>
+      <ul>
+        <li>Diversificar el portafolio de productos más allá del Top 5.</li>
+        <li>Impulsar estrategias para fortalecer el canal online.</li>
+        <li>Optimizar costos en regiones con bajo margen.</li>
+        <li>Detectar patrones trimestrales para ajustar campañas.</li>
+      </ul>
     </div>
 
-    <!-- CTA de contacto -->
-    <div class="cta">
-      <p>¿Te gustaría que realice este tipo de análisis para tu empresa?</p>
-      <a href="#contact" class="btn btn-cta">Contáctame</a>
+    <!-- Tecnologías y herramientas -->
+    <div class="card">
+      <h2>🛠️ Herramientas y Técnicas</h2>
+      <p><strong>Transformación de datos:</strong> Power Query.</p>
+      <p><strong>Modelado y lógica:</strong> DAX (ALL, RANKX, SELECTEDVALUE, HASONEVALUE, SUMX, SWITCH, MAXX).</p>
+      <p><strong>Visualización:</strong> Segmentaciones desconectadas, parámetros de campo, bookmarks, títulos
+        dinámicos.</p>
     </div>
 
-    <div class="back-to-main">
-      <a href="index.html" class="btn btn-back">← Volver al Portafolio Principal</a>
-    </div>
+    <section class="project-closing">
+      <h2>Este es solo uno de mis proyectos</h2>
+      <p>Mi portafolio incluye soluciones en Power BI, Python, SQL y más. Si querés ver cómo aplico distintas técnicas
+        de análisis de datos en diferentes contextos, te invito a descubrir los demás proyectos.</p>
+      <a href="index.html#projects" class="btn btn-cta">Ver más proyectos</a>
+    </section>
 
-  </section>
+
+
+
+  </div>
 </body>
+<script src="js/particles.min.js"></script>
+<script src="scripts.js"></script>
 
 </html>
