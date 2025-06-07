@@ -57,6 +57,7 @@ nav.navbar {
   position: relative;
   overflow: hidden;
   transition: color 0.3s ease;
+  z-index: 1;
 }
 
 /* Efecto "pegajoso" */
@@ -151,7 +152,6 @@ header::after {
 }
 
 #hero-content h1 {
-  font-family:;
   font-weight: 800;
   font-size: clamp(4rem, 10vw, 5.5rem);
   background: linear-gradient(90deg, #F2B807, #04738C, #F2B807);
