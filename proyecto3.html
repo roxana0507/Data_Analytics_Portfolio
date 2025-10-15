@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto P&L - Estado de Resultados en Power BI</title>
+  <link rel="stylesheet" href="proyectos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <!-- Título y encabezado -->
+    <header class="project-hero">
+      <div id="particles-js"></div>
+      <div class="hero-title-wrapper">
+        <a href="index.html" class="btn-back-hero">← Volver al Portafolio Principal</a>
+        <h1 class="hero-title-animated">
+          Construcción Dinámica del Estado de Resultados (P&L) en Power BI
+        </h1>
+        <p class="project-role">Desarrollado por: Roxana Chinchilla Vásquez · Analista de Datos</p>
+      </div>
+    </header>
+
+    <!-- Objetivo y Pregunta -->
+    <div class="card">
+      <h2>🎯 Objetivo</h2>
+      <p>Transformar un reporte estático en Excel en un Estado de Resultados dinámico y visual en Power BI, permitiendo analizar ingresos, costos y gastos de forma interactiva, con cálculos personalizados por fila y comparativos anuales y trimestrales.</p>
+    </div>
+
+    <div class="card">
+      <h2>❓Pregunta Principal</h2>
+      <p>¿Cómo puedo construir un Estado de Resultados (P&L) en Power BI que permita analizar cada cuenta de ingresos y egresos, calcular utilidades netas y brutas, y generar insights sobre el comportamiento financiero de la empresa?</p>
+    </div>
+
+    <!-- Visual del Dashboard -->
+    <div class="card img-card">
+      <img src="images/PnL.JPG" alt="Dashboard P&L Power BI" style="max-width: 100%; height: auto;"/>
+      <a href="https://app.powerbi.com/links/uq20P5j7f3?ctid=d08db6ec-36c8-4b54-b9b2-2d03dcc84544&pbi_source=linkShare&bookmarkGuid=5b260b82-afee-46ec-ab19-41415407f100"
+        class="btn" target="_blank">Ver Dashboard Interactivo</a>
+    </div>
+
+    <!-- Vista Previa del Dashboard con Zoom -->
+    <section class="dashboard-preview">
+      <h2 class="preview-title">Vista previa del dashboard</h2>
+      <div class="dashboard-images">
+        <img src="images/pandLcompleto.png" alt="Captura P&L Parte 2" style="max-width: 100%; height: auto;" onclick="openImage(this.src)">
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+      <span class="close-btn">✖</span>
+      <img id="lightbox-img" src="" alt="Captura Ampliada">
+    </div>
+
+    <!-- Hallazgos Relevantes -->
+    <div class="card">
+      <h2>🔍 Hallazgos Relevantes</h2>
+      <p>Este proyecto fue clave para transformar un estado de resultados elaborado en Excel en un reporte dinámico y
+        automatizado en Power BI. Su valor está en facilitar la lectura y análisis de datos financieros, generando
+        insights rápidos para la toma de decisiones estratégicas. Algunos hallazgos y ventajas fueron:</p>
+      <ul>
+        <li>Se identificaron gastos de operación con mayor impacto, destacando salarios y costos publicitarios.</li>
+        <li>La visualización de cascada permitió explicar claramente cómo cada rubro afecta la utilidad neta, algo imposible de ver en tablas estáticas de Excel.</li>
+        <li>El nuevo reporte facilita análisis por trimestre, % sobre ingresos y comparaciones entre años, eliminando tareas manuales recurrentes.</li>
+        <li>Los cálculos se ajustan automáticamente al año, trimestre o mes seleccionado, gracias a medidas DAX dinámicas.</li>
+      </ul>
+      <p>En esencia, se pasó de un reporte estático y difícil de actualizar a una herramienta de análisis ágil, visual y
+        fácil de mantener.</p>
+    </div>
+
+    <!-- Tecnologías y herramientas -->
+    <div class="card">
+      <h2>🛠️ Herramientas y Técnicas</h2>
+      <p><strong>Transformación de datos:</strong> Power Query para pivotar y limpiar datos de Excel.</p>
+      <p><strong>Modelado y cálculos:</strong> DAX con funciones SUMMARIZE, UNION, DIVIDE, SWITCH, ALL, RANKX y cálculos dinámicos por fila.</p>
+      <p><strong>Visualización:</strong> Gráfico de cascada para visualización de flujo de utilidad neta, matriz dinámica, segmentadores por año, trimestre y cuentas.</p>
+    </div>
+
+    <section class="project-closing">
+      <h2>Este es solo uno de mis proyectos</h2>
+      <p>Mi portafolio incluye soluciones en Power BI, Python, SQL y más. Si querés ver cómo aplico distintas técnicas
+        de análisis de datos en diferentes contextos, te invito a descubrir los demás proyectos.</p>
+      <a href="index.html#projects" class="btn btn-cta">Ver más proyectos</a>
+    </section>
+
+  </div>
+
+</body>
+<script src="js/particles.min.js"></script>
+<script src="scripts.js"></script>
+
+</html>
