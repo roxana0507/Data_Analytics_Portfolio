@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto 4 - Análisis de Venta Cruzada</title>
+  <link rel="stylesheet" href="proyectos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- Hero -->
+    <header class="project-hero">
+      <div id="particles-js"></div>
+      <div class="hero-title-wrapper">
+        <a href="index.html" class="btn-back-hero">← Volver al Portafolio Principal</a>
+        <h1 class="hero-title-animated">
+          Análisis de Venta Cruzada (Market Basket Analytics)
+        </h1>
+        <p class="project-role">Desarrollado por: Roxana Chinchilla Vásquez · Analista de Datos</p>
+      </div>
+    </header>
+
+    <!-- Objetivo -->
+    <div class="card">
+      <h2>🎯 Objetivo</h2>
+      <p>
+        Diseñar un dashboard en Power BI que identifique oportunidades de <strong>venta cruzada</strong> entre productos
+        y facilite decisiones comerciales mediante un <strong>ranking por potencial</strong>, una <strong>matriz de
+          coincidencia de compras</strong>
+        y <strong>segmentación por categoría</strong>.
+      </p>
+    </div>
+
+    <!-- Pregunta -->
+    <div class="card">
+      <h2>❓Pregunta Principal</h2>
+      <p>
+        ¿Qué productos tienen mayor probabilidad de comprarse juntos y cómo varían estas combinaciones al analizar
+        diferentes <strong>categorías</strong>, <strong>productos</strong> o <strong>clientes</strong>?
+      </p>
+    </div>
+
+    <!-- Visual principal -->
+    <div class="card img-card">
+      <img src="images/dash4.png" alt="Dashboard Análisis de Venta Cruzada" />
+      <!-- Reemplaza '#' por el link público del informe si lo publicás en Power BI Service -->
+      <a href="#" class="btn" target="_blank">Ver Dashboard Interactivo</a>
+    </div>
+
+    <!-- Vista previa con zoom -->
+    <section class="dashboard-preview">
+      <h2 class="preview-title">Vista previa del dashboard</h2>
+      <div class="dashboard-images">
+        <!-- Usa las 3 capturas que adjuntaste -->
+        <img src="images/dash4.png" alt="Análisis de Venta Cruzada" onclick="openImage(this.src)">
+        <img src="images/VentaCruzadaProducto.png" alt="Recomendación por Producto" onclick="openImage(this.src)">
+        <img src="images/VentaCruzadaCliente.png" alt="Recomendación por Cliente" onclick="openImage(this.src)">
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeImage()">
+      <span class="close-btn">✖</span>
+      <img id="lightbox-img" src="" alt="Captura Ampliada">
+    </div>
+
+    <!-- Hallazgos Relevantes -->
+    <div class="card">
+      <h2>🔍 Hallazgos Relevantes</h2>
+      <ul>
+        <li><strong>Productos ancla por categoría:</strong> el Top concentra la mayor cantidad de combinaciones y actúa
+          como “gancho” para activar venta cruzada.</li>
+        <li><strong>Pares con alta afinidad (&gt;~60 %):</strong> combinaciones recurrentes que justifican bundles o
+          promociones cruzadas inmediatas.</li>
+        <li><strong>Huecos de complementariedad:</strong> productos con alto potencial pero baja coincidencia actual;
+          oportunidad de exposición conjunta o recomendación digital.</li>
+        <li><strong>Efecto filtro por categoría:</strong> la intensidad de coincidencia cambia al segmentar, revelando
+          contextos específicos por categoría.</li>
+        <li><strong>Foco en cliente/producto:</strong> las páginas de recomendación muestran el impacto directo y dónde
+          conviene intervenir primero.</li>
+      </ul>
+    </div>
+
+    <!-- Oportunidades de Mejora -->
+    <div class="card">
+      <h2>💡 Oportunidades de Mejora</h2>
+      <ul>
+        <li><strong>Bundles y promos cruzadas:</strong> crear combos con los pares de mayor afinidad; probar 2×1 mixto y
+          cupones condicionados.</li>
+        <li><strong>Merchandising y planograma:</strong> co-ubicar productos complementarios y señalizar “complementa
+          con…” en góndola y cabeceras.</li>
+        <li><strong>Recomendación digital:</strong> activar “Frecuentemente comprados juntos” en e-commerce y kioscos,
+          priorizando combinaciones con mejor margen.</li>
+        <li><strong>Optimización por rentabilidad:</strong> integrar margen y costo para priorizar combinaciones por
+          impacto económico (ticket y margen).</li>
+        <li><strong>Experimentación y seguimiento:</strong> tests A/B por categoría y monitoreo de <em>uplift</em> en
+          adjunción, ticket medio y conversión de bundles.</li>
+        <li><strong>Roadmap de datos:</strong> sumar estacionalidad, reglas de exclusión y refresco frecuente con
+          alertas de oportunidades emergentes.</li>
+      </ul>
+    </div>
+
+
+    <!-- Herramientas -->
+    <div class="card">
+      <h2>🛠️ Herramientas y Técnicas</h2>
+      <p><strong>Transformación de datos:</strong> Power Query.</p>
+      <p><strong>Modelado y lógica (DAX):</strong> RANKX, SELECTEDVALUE, HASONEVALUE, SUMX, MAXX, medidas normalizadas y
+        cálculos de porcentaje de coincidencia.</p>
+      <p><strong>Visualización:</strong> Matriz con formato condicional, tablas de soporte, segmentadores por categoría,
+        títulos dinámicos y tooltips informativos.</p>
+    </div>
+
+    <!-- Cierre -->
+    <section class="project-closing">
+      <h2>Este es solo uno de mis proyectos</h2>
+      <p>
+        Mi portafolio incluye soluciones en Power BI, Python y SQL. Si querés ver cómo aplico distintas técnicas
+        de análisis y visualización, te invito a explorar los demás proyectos.
+      </p>
+      <a href="index.html#projects" class="btn btn-cta">Ver más proyectos</a>
+    </section>
+  </div>
+
+  <script src="js/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
